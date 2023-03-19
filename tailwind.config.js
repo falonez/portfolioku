@@ -44,6 +44,9 @@ module.exports = {
         error: colors.rose,
       },
     },
+    fontFamily: {
+      rubik: ['Rubik', 'sans-serif'],
+    }
   },
   presets: [require('@morpheme/tailwind-config/preset')],
 };
