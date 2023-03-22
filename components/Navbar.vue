@@ -1,27 +1,47 @@
 <template>
   <nav
-    class="bg-white dark:bg-myDark fixed top-0 right-0 left-0 transition-all duration-700 ease-in-out z-50"
+    class="dark:bg-myDark fixed top-0 right-0 left-0 transition-all duration-700 ease-in-out z-50"
     :class="{ 'bg-myLight dark:bg-secondaryDark': isScrolled }"
   >
     <div class="mx-auto px-[7%] md:px-[10%]">
       <div class="flex items-center justify-between h-16">
         <!-- <div class="flex items-center justify-between"> -->
-        <a
+        <NuxtLink
           class="flex-shrink-0 text-myLight dark:text-textDark"
-          :class="{ 'text-Light': isScrolled }"
-          href="#"
+          :class="{ 'text-white': isScrolled }"
+          to="/"
         >
           Fathan Mubarok
-        </a>
+        </NuxtLink>
         <div class="hidden md:block">
           <div
             class="ml-10 flex items-baseline text-myLight dark:text-textDark"
-            :class="{ 'text-Light': isScrolled }"
           >
-            <a class="nav-link ml-4" href="#">Portfolio</a>
-            <a class="nav-link ml-4" href="#">Experience</a>
-            <a class="nav-link ml-4" href="#">Article</a>
-            <a class="nav-link ml-4" href="#">Contact</a>
+            <NuxtLink
+              to="/portfolio"
+              class="nav-link ml-4"
+              :class="{ 'text-Light': isScrolled }"
+              >Portfolio</NuxtLink
+            >
+            <NuxtLink
+              to="/experience"
+              class="nav-link ml-4"
+              :class="{ 'text-Light': isScrolled }"
+              >Experience</NuxtLink
+            >
+            <NuxtLink
+              to="/article"
+              class="nav-link ml-4"
+              :class="{ 'text-Light': isScrolled }"
+              >Article</NuxtLink
+            >
+
+            <NuxtLink
+              to="/contact"
+              class="nav-link ml-4"
+              :class="{ 'text-Light': isScrolled }"
+              >Contact</NuxtLink
+            >
           </div>
           <!-- </div> -->
         </div>
