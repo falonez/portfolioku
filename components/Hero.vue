@@ -1,19 +1,21 @@
 <template>
-  <section class="hero h-screen">
+  <section
+    class="min-h-screen h-auto flex flex-col justify-center item-center dark:bg-myDark border-0"
+  >
     <div
-      class="container mx-auto px-[7%] pt-20 flex flex-col lg:flex-row justify-between"
+      class="container mx-auto px-[7%] md:px-[10%] pt-20 flex flex-col lg:flex-row justify-between"
     >
-      <div class="flex flex-col justify-between">
+      <div class="flex flex-col justify-between dark:text-textDark">
         <div>
           <div class="flex items-center">
-            <hr class="border-2 w-16 border-black" />
+            <hr class="border-2 w-16 border-black dark:border-textDark" />
             &nbsp;
-            <h1 class="font-bold text-2xl py-2 md:text-[3rem] md:py-6">
+            <h1 class="font-bold text-2xl py-2 md:text-[2.5rem] md:py-6">
               Hello
             </h1>
           </div>
           <h1
-            class="font-bold text-3xl py-2 md:text-[4rem] md:py-6 lg:text-[2.7rem] xl:text-[4rem]"
+            class="font-bold text-3xl py-2 md:text-[3rem] md:py-6 lg:text-[2.4rem] xl:text-[3rem]"
           >
             I'am Fathan Mubarok
           </h1>
@@ -29,7 +31,7 @@
         </div>
       </div>
       <img
-        class="w-full lg:w-1/2 lg:px-10 ]"
+        class="w-full lg:w-1/2 lg:px-10"
         src="@/assets/profile.webp"
         alt="hero"
       />
