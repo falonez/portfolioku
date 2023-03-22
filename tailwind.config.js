@@ -32,6 +32,7 @@ const secondary = {
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: ['./node_modules/@morpheme/**/src/**/*.{vue,js,ts,jsx,tsx,css}'],
   theme: {
     extend: {
@@ -42,6 +43,13 @@ module.exports = {
         success: colors.emerald,
         warning: colors.yellow,
         error: colors.rose,
+        myLight: '#363434',
+        secondaryLight: '#D6D6D6',
+        textLight: '#333333',
+        myDark: '#1F2937',
+        secondaryDark: '#374151',
+        textDark: '#FFFAFA',
+        Light: '#E2E8F0',
       },
     },
     fontFamily: {
