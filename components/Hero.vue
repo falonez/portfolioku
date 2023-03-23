@@ -25,9 +25,27 @@
           </p>
         </div>
         <div class="text-[2.5rem] md:text-[3rem] pb-4 md:p-0">
-          <Icon name="uil:github" />
-          <Icon name="mdi:linkedin" />
-          <Icon name="mdi:instagram" />
+          <a
+            href="https://github.com/falonez"
+            target="blank"
+            class="hover:opacity-60"
+          >
+            <Icon name="uil:github" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/fathan-mubarok-2597171b5/"
+            target="blank"
+            class="hover:opacity-60"
+          >
+            <Icon name="mdi:linkedin" />
+          </a>
+          <a
+            href="https://www.instagram.com/falonez15/"
+            class="hover:opacity-60"
+            target="blank"
+          >
+            <Icon name="mdi:instagram" />
+          </a>
         </div>
       </div>
       <img
