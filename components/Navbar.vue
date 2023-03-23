@@ -18,27 +18,33 @@
             class="ml-10 flex items-baseline text-myLight dark:text-textDark"
           >
             <NuxtLink
-              to="/portfolio"
-              class="nav-link ml-4"
+              to="/"
+              class="nav-link ml-4 hover:opacity-50"
+              :class="{ 'text-Light': isScrolled }"
+              >Home</NuxtLink
+            >
+            <NuxtLink
+              to="/#portfolio"
+              class="nav-link ml-4 hover:opacity-50"
               :class="{ 'text-Light': isScrolled }"
               >Portfolio</NuxtLink
             >
-            <NuxtLink
+            <!-- <NuxtLink
               to="/experience"
-              class="nav-link ml-4"
+              class="nav-link ml-4 hover:opacity-50"
               :class="{ 'text-Light': isScrolled }"
               >Experience</NuxtLink
-            >
+            > -->
             <NuxtLink
               to="/article"
-              class="nav-link ml-4"
+              class="nav-link ml-4 hover:opacity-50"
               :class="{ 'text-Light': isScrolled }"
               >Article</NuxtLink
             >
 
             <NuxtLink
-              to="/contact"
-              class="nav-link ml-4"
+              to="/#contact"
+              class="nav-link ml-4 hover:opacity-50"
               :class="{ 'text-Light': isScrolled }"
               >Contact</NuxtLink
             >
@@ -47,7 +53,7 @@
         </div>
         <div class="-mr-2 flex justify-center items-center">
           <div
-            class="nav-link ml-4 text-2xl cursor-pointer"
+            class="nav-link ml-4 hover:opacity-50 text-2xl cursor-pointer"
             @click="
               darkmode = !darkmode;
               toogle();
@@ -61,7 +67,7 @@
             />
           </div>
           <div
-            class="nav-link ml-4 text-2xl cursor-pointer"
+            class="nav-link ml-4 hover:opacity-50 text-2xl cursor-pointer"
             @click="
               darkmode = !darkmode;
               toogle();
@@ -129,7 +135,7 @@ const isScrolled = ref(false);
 onMounted(() => {
   // Menambahkan kelas css pada navbar saat melakukan scroll
   window.addEventListener("scroll", () => {
-    isScrolled.value = window.scrollY > 100;
+    isScrolled.value = window.scrollY > 0;
   });
 });
 
