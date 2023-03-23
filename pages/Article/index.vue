@@ -2,7 +2,7 @@
   <!-- Hero Article -->
   <section>
     <div
-      class="flex justify-center items-center flex-col pt-24 px-[10%] md:pt-32"
+      class="flex justify-center items-center flex-col pt-24 px-[10%] md:pt-32 dark:bg-myDark dark:text-Light"
     >
       <h1 class="text-xl md:text-3xl">Our Blog</h1>
       <h2 class="text-xl font-bold py-2 md:text-4xl">Resources and insights</h2>
@@ -14,7 +14,7 @@
   </section>
   <section>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-[10%] pb-20"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-[10%] pb-20 dark:bg-myDark dark:text-Light"
     >
       <div
         class="flex flex-col justify-between"
@@ -24,13 +24,13 @@
         <img src="https://source.unsplash.com/random/300x200" alt="" />
         <h1
           v-text="today(index)"
-          class="pt-2 font-semibold text-myLight opacity-50"
+          class="pt-2 font-semibold text-myLight opacity-50 dark:text-Light"
         ></h1>
-        <h2 class="font-bold pt-1 text-xl text-myLight">
+        <h2 class="font-bold pt-1 text-xl text-myLight dark:text-Light">
           {{ article.title }}
         </h2>
         <!-- <p>{{ article.body }}</p> -->
-        <p class="pt-2 pb-2 text-myLight">
+        <p class="pt-2 pb-2 text-myLight dark:text-Light">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
           obcaecati, nobis nesciunt nulla amet corrupti?
         </p>
