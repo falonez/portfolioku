@@ -9,7 +9,7 @@
       <p class="text-center text-xl">
         The latest industry news, interviews, technologies, and resources
       </p>
-      <input type="text" placeholder="🔍Search" class="my-8" />
+      <input type="text" placeholder="🔍Search" class="my-8" @keyup="_search" />
     </div>
   </section>
   <section>
@@ -19,6 +19,7 @@
       <div
         class="flex flex-col justify-between"
         v-for="(article, index) in dataku"
+        :key="article.id"
       >
         <img src="https://source.unsplash.com/random/300x200" alt="" />
         <h1
@@ -59,7 +60,7 @@
 
 <script setup>
 const { data: articles } = await useFetch("https://dummyjson.com/posts");
-const dataku = articles.value.posts;
+const dataku = ref(articles.value.posts);
 
 // Date Function
 const today = (index) => {
@@ -98,6 +99,14 @@ const checkTags = (tag) => {
   }
 };
 
-console.log(today);
-console.log(articles.value.posts);
+// Search Function
+const _search = (e) => {
+  const search = e.target.value;
+  const datas = articles.value.posts;
+  const filtered = datas.filter((articles) => {
+    return articles.title.toLowerCase().includes(search.toLowerCase());
+  });
+
+  dataku.value = filtered;
+};
 </script>
