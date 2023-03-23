@@ -1,5 +1,7 @@
 <template>
-  <section class="min-h-screen px-[10%] flex items-center">
+  <section
+    class="min-h-screen px-[10%] flex items-center dark:bg-myDark dark:text-Light"
+  >
     <div class="flex justify-center flex-col items-start md:flex-row">
       <div class="md:w-1/2 w-full md:pr-10">
         <img
