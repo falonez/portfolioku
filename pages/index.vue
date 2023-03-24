@@ -1,7 +1,9 @@
 <template>
-  <Hero />
-  <Provide />
-  <Portfolio />
-  <Contact />
-  <Article />
+  <div>
+    <Hero />
+    <Provide />
+    <Portfolio />
+    <Contact />
+    <Article />
+  </div>
 </template>
