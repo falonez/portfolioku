@@ -17,7 +17,7 @@
           <h1
             class="font-bold text-3xl py-2 md:text-[3rem] md:py-6 lg:text-[2.4rem] xl:text-[3rem]"
           >
-            I'am Fathan Mubarok
+            I' m Fathan Mubarok
           </h1>
           <h2 class="text-xl md:text-[2rem] md:py-2">Frontend Developer</h2>
           <p class="text-gray-500 md:text-[1.3rem] md:py-2">

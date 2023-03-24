@@ -1,5 +1,7 @@
 <template>
-  <footer class="bg-myLight dark:bg-secondaryDark min-h-[30vh] h-auto w-full">
+  <footer
+    class="bg-myLight dark:bg-secondaryDark min-h-[30vh] h-auto w-full relative bottom-0"
+  >
     <div
       class="flex flex-col md:flex-row justify-around items-center px-[10%] py-5"
     >
