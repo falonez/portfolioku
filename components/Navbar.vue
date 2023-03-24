@@ -122,24 +122,28 @@
           to="/"
           class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
           :class="{ 'text-Light': isScrolled }"
+          @click="isOpen = !isOpen"
           >Home</NuxtLink
         >
         <NuxtLink
           to="/#portfolio"
           class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
           :class="{ 'text-Light': isScrolled }"
+          @click="isOpen = !isOpen"
           >Portfolio</NuxtLink
         >
         <!-- <NuxtLink
               to="/experience"
               class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
               :class="{ 'text-Light': isScrolled }"
+              @click="isOpen = !isOpen"
               >Experience</NuxtLink
             > -->
         <NuxtLink
           to="/article"
           class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
           :class="{ 'text-Light': isScrolled }"
+          @click="isOpen = !isOpen"
           >Article</NuxtLink
         >
 
@@ -147,6 +151,7 @@
           to="/#contact"
           class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
           :class="{ 'text-Light': isScrolled }"
+          @click="isOpen = !isOpen"
           >Contact</NuxtLink
         >
       </div>
