@@ -23,6 +23,12 @@
         <h1 class="text-xl font-bold">{{ dataku.title }}</h1>
         <h2 class="text-md">{{ dataku.body }}</h2>
       </div>
+      <button
+        class="self-end py-2 px-4 rounded-md bg-myLight text-Light hover:opacity-80 dark:bg-secondaryDark"
+        onclick="history.back()"
+      >
+        Back
+      </button>
     </div>
   </section>
 </template>

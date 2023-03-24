@@ -1,6 +1,5 @@
 <template>
-  <!-- Hero Article -->
-  <section>
+  <section id="Article">
     <div
       class="flex justify-center items-center flex-col pt-24 px-[10%] md:pt-32 dark:bg-myDark dark:text-Light"
     >
@@ -9,12 +8,15 @@
       <p class="text-center text-xl">
         The latest industry news, interviews, technologies, and resources
       </p>
-      <input type="text" placeholder="🔍Search" class="my-8" @keyup="_search" />
+      <input
+        type="text"
+        placeholder="🔍Search"
+        class="my-8 text-myDark"
+        @keyup="_search"
+      />
     </div>
-  </section>
-  <section>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-[10%] pb-20 dark:bg-myDark dark:text-Light"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-[10%] pb-20 dark:bg-myDark dark:text-Light min-h-screen"
     >
       <div
         class="flex flex-col justify-between"
@@ -61,6 +63,8 @@
 <script setup>
 const { data: articles } = await useFetch("https://dummyjson.com/posts");
 const dataku = ref(articles.value.posts);
+const lenghtdata = ref(dataku.value.length);
+console.log(lenghtdata.value);
 
 // Date Function
 const today = (index) => {
