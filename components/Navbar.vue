@@ -118,10 +118,37 @@
         class="px-2 pt-2 pb-3 sm:px-3 flex flex-col justify-center gap-6 text-xl text-white font-[400] items-center fixed top-0 bg-secondaryLight dark:bg-secondaryDark bg-blue-500 h-screen z-10 transition-all duration-1000 ease-in-out"
         :class="isOpen ? 'left-[50%] w-1/2' : 'left-[100%] w-1/2'"
       >
-        <a class="nav-link tracking-[0.1rem]" href="#">Home</a>
-        <a class="nav-link mt-1 tracking-[0.1rem]" href="#">Pricing</a>
-        <a class="nav-link mt-1 tracking-[0.1rem]" href="#">Features</a>
-        <a class="nav-link mt-1 tracking-[0.1rem]" href="#">Contact Us</a>
+        <NuxtLink
+          to="/"
+          class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
+          :class="{ 'text-Light': isScrolled }"
+          >Home</NuxtLink
+        >
+        <NuxtLink
+          to="/#portfolio"
+          class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
+          :class="{ 'text-Light': isScrolled }"
+          >Portfolio</NuxtLink
+        >
+        <!-- <NuxtLink
+              to="/experience"
+              class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
+              :class="{ 'text-Light': isScrolled }"
+              >Experience</NuxtLink
+            > -->
+        <NuxtLink
+          to="/article"
+          class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
+          :class="{ 'text-Light': isScrolled }"
+          >Article</NuxtLink
+        >
+
+        <NuxtLink
+          to="/#contact"
+          class="nav-link tracking-[0.1rem] text-myLight dark:text-Light hover:opacity-50"
+          :class="{ 'text-Light': isScrolled }"
+          >Contact</NuxtLink
+        >
       </div>
     </div>
   </nav>
