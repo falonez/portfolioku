@@ -1,3 +1,7 @@
 <template>
-  <Welcome />
+  <Hero />
+  <Provide />
+  <Portfolio />
+  <Contact />
+  <Article />
 </template>
